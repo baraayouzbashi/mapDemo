@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <h4>Add New Position</h4>
+    <form>
+      <div class="form-group form-row">
+
+          <label class=" col-5 col-form-label col-form-label-sm">Position Code</label>
+          <input type="text" class="form-control form-control-sm col-7">
+<!--  -->
+          <label class=" col-5 col-form-label col-form-label-sm">Position Name</label>
+          <input type="text" class="form-control form-control-sm col-7">
+<!--  -->
+          <label class=" col-5 col-form-label col-form-label-sm">Axis</label>
+          <select class=" custom-select form-control form-control-sm col-7">
+            <optgroup label="Main Axis">
+              <option>XZ</option>
+              <option>XY</option>
+              <option>XX</option>
+            </optgroup>
+            <optgroup label="Secondary Axis">
+              <option>ZZ</option>
+              <option>YY</option>
+              
+            </optgroup>
+          </select>
+<!--  -->
+          <label class=" col-5 col-form-label col-form-label-sm">Catalogue</label>
+          <input type="text" class="form-control form-control-sm col-7">
+<!--  -->
+          <label class=" col-5 col-form-label col-form-label-sm">Image</label>
+          <span class="custom-file col-7">
+            <input type="file" class="custom-file-input col-12" >
+            <label class="custom-file-label col-12" for="customFile">Choose File</label>
+          </span>
+<!--  -->
+          <span class="col-12">
+            <div class="row">
+
+              <label class=" col-7 col-form-label col-form-label-sm" for="inlineCheckbox1">Is a Parent Position</label>
+              <input class="col-1 mt-2" type="checkbox" id="inlineCheckbox1" >
+            </div>
+          </span>
+<!--  -->
+          <label class=" col-5 col-form-label col-form-label-sm">Parent Position</label>
+          <select class="custom-select form-control form-control-sm col-7">
+              <option>Position #2</option>
+              <option>Position #51</option>
+              <option>Position #110</option>
+          </select>
+<!--  -->
+          <button class="btn btn-block btn-outline-info btn-sm">Save</button>
+      </div>
+    </form>
+
+  </div>
+</div>

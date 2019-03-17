@@ -1,0 +1,31 @@
+<!-- <div leaflet style="height: 600px;"
+     
+      leafletDraw
+     [leafletOptions]="options"
+     [leafletDrawOptions]="drawOptions"
+     (leafletMapReady)="fun2($event)"
+     >
+</div> -->
+<div class="container-fluid">
+
+      <div class="row" style=" height: 100vh;">
+      
+            <div class="col-2" style="background:#f9f9f9">
+                  <div class="text-center " >
+                        <button class="btn btn-outline-info mt-2"  (click)="draw()">Add New Position <i class="fa fa-plus"></i> </button>
+                        <button class="btn btn-outline-danger mt-2" (click)="quickChange()"> Quick Image</button>
+                        <p>or</p> 
+                        <input class="form-control-file mt-2" (change)="changeImage($event)" type="file" accept="image/*"/>
+                  </div>
+                  <!-- <select [(ngModel)]='rightClickContext' name="selectContext">
+                        <option value="1">right click opens popup</option>
+                        <option value="2">right click allows editing</option>
+                  </select> -->
+                  <!-- <p class="mt-2"> <strong>Quick Edit</strong> mode allows dragging the position around and modifying position points</p> -->
+                  <!-- <p class="mt-2" >Right click a position to allow quick edit, then Right click again to save!</p> -->
+            </div>
+            
+            <div class="col-10" id="map" ></div>
+            <!-- <div style="clear:both"></div> -->
+      </div>
+</div>
